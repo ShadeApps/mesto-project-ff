@@ -1,0 +1,19 @@
+{
+  "name": "mesto",
+  "version": "1.0.0",
+  "description": "Learning project",
+  "main": "index.js",
+  "scripts": {
+    "test": "Echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShadeApps/mesto-project-ff.git"
+  },
+  "author": "Sergey Grishchev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ShadeApps/mesto-project-ff/issues"
+  },
+  "homepage": "https://github.com/ShadeApps/mesto-project-ff#readme"
+}

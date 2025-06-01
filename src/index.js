@@ -1,6 +1,8 @@
 const cardTemplate = document.querySelector('#card-template').content;
 const placesList = document.querySelector('.places__list');
 
+import './styles/index.css';
+
 function handleDeleteCard(cardElement) {
   cardElement.remove();
 }

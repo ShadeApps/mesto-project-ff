@@ -2,6 +2,7 @@ const cardTemplate = document.querySelector('#card-template').content;
 const placesList = document.querySelector('.places__list');
 
 import './styles/index.css';
+import { initialCards } from './components/cards.js';
 
 function handleDeleteCard(cardElement) {
   cardElement.remove();

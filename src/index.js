@@ -1,7 +1,7 @@
 import './styles/index.css';
 import { initialCards } from './components/cards.js';
 import { createCard, handleDeleteCard, handleLikeCard } from './components/card.js';
-import { openModal, closeModal, closeModalByOverlay } from './components/modal.js';
+import { openModal, closeModal } from './components/modal.js';
 
 import logoSrc from './images/logo.svg';
 import avatarSrc from './images/avatar.jpg';
@@ -90,7 +90,7 @@ closeButtons.forEach(button => {
 
 document.addEventListener('click', (evt) => {
   if (evt.target.classList.contains('popup')) {
-    closeModalByOverlay(evt);
+    closeModal(evt.target);
   }
 });
 

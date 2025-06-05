@@ -29,6 +29,7 @@ const popupImage = document.querySelector('.popup__image');
 const popupCaption = document.querySelector('.popup__caption');
 
 const closeButtons = document.querySelectorAll('.popup__close');
+const popups = document.querySelectorAll('.popup');
 
 const logoImg = document.querySelector('.header__logo');
 const profileImage = document.querySelector('.profile__image');
@@ -88,10 +89,12 @@ closeButtons.forEach(button => {
   button.addEventListener('click', () => closeModal(popup));
 });
 
-document.addEventListener('click', (evt) => {
-  if (evt.target.classList.contains('popup')) {
-    closeModal(evt.target);
-  }
+popups.forEach((popup) => {
+  popup.addEventListener("mousedown", (evt) => {
+    if (evt.target.classList.contains("popup")) {
+      closeModal(popup);
+    }
+  });
 });
 
 initialCards.forEach(renderCard);
